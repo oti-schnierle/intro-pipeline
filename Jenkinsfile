@@ -31,6 +31,11 @@ pipeline {
         }
       }
     }
+    stage('Deploy') {
+      steps {
+        echo 'Build is done'
+      }
+    }
   }
   environment {
     MY_NAME = 'Mary'
